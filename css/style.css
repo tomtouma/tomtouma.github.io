@@ -6,7 +6,7 @@ body {
   background-attachment: fixed;*/ /*static background*/
   background-color: rgba(255, 255, 255, 0.3); /*blends the color and image*/
   background-blend-mode: lighten;
-  /*center align for smartphones*/
+  /*center align background image for smartphones*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -21,7 +21,7 @@ body {
   text-align: center;
   /*margin: auto;*/
   margin-left: auto;
-  margin-right: right;
+  margin-right: auto;
   margin-top: 5%;
   color: white;
   font-family: 'Calibri', Sans-serif;
