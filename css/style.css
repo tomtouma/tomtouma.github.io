@@ -14,6 +14,8 @@ body {
   background-size: cover;
 }
 
+/*---------------------------*/
+
 /* Here STARTS the main box */
 .box{
   width: 450px;
@@ -89,45 +91,19 @@ body {
 .fa:hover {
   opacity: 0.55;
 }
-
 /* Here ENDS the main box */
+
 /*-------------------------*/
 
-/* Here STARTS the VIDEOS box */
-.box2{
-  width: 450px;
-  background: rgba(0, 0, 0, 0.70);
-  padding: 40px;
-  text-align: center;
-  /*margin: auto;*/
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 3%;
-  color: white;
-  font-family: 'Calibri', Sans-serif;
-  border-radius: 0%;
-}
+/* Here STARTS the VIDEOS box AKA "box2" */
+
 /*Consider just having buttons to different URL's.. easier*/
 
-/* Here ENDS the VIDEOS box */
+/* Here ENDS the VIDEOS box AKA "box2" */
+
 /*-------------------------*/
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Here STARTS the authorship box */
-
 .authorship-box{
   width: 450px; /*should match other boxes if you want it exactly centered with them*/
   background: rgba(0, 0, 0, 0.70);
@@ -142,7 +118,5 @@ body {
   color: white;
   font-family: 'Calibri', Sans-serif;
   border-radius: 0%;
-
 }
-
 /* Here ENDS the authorship box */
