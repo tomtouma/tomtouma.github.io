@@ -1,9 +1,9 @@
 body {
   margin: 0;
   padding: 0;
-  background: url("../img/background.JPG") center center; /*the apostrophes are needed for github*/
-  background-repeat: no-repeat;
-  background-attachment: fixed; /* note: static background --> https://www.w3schools.com/cssref/pr_background-attachment.asp */
+  background: url("../img/background.JPG") no-repeat center center fixed; /*the apostrophes are needed for github*/
+  /*background-repeat: no-repeat;
+  background-attachment: fixed;*/ /* note: static background --> https://www.w3schools.com/cssref/pr_background-attachment.asp */
   background-color: rgba(255, 255, 255, 0.3); /*blends the color and image*/
   background-blend-mode: lighten;
   /*center align for smartphones*/
