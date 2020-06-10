@@ -28,9 +28,9 @@ body {
   font-family: 'Calibri', Sans-serif;
   border-radius: 0%;
 
-  /*scroll functionality for smartphone*/
-  height: 100vh;
-  max-height: 100vh;
+  /*this code allows you to scroll within a set size div box*/
+  height: 500px;
+  max-height: 500px;
   overflow-y: scroll;
   -webkit-overflow-scrolling:touch; //mobile safari
 }
