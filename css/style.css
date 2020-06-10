@@ -7,6 +7,7 @@ body {
   background-size: cover;
   background-color: rgba(255, 255, 255, 0.3); /*blends the color and image*/
   background-blend-mode: lighten;
+  background-position: center;
 }
 
 /* Here STARTS the main box */
