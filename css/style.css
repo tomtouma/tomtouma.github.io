@@ -13,6 +13,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
 }
+/* Here ENDS the BODY*/
 
 /*---------------------------*/
 
@@ -93,9 +94,12 @@ body {
 }
 /*end of icon styling*/
 
-/* START of LOGOS*/
+/*---------------------*/
+
+/* START of LOGOS styling*/
 .box1-nasa-logo{ /*see HTML file for this reference */
   /*border-radius: ;*/
+padding-top: 20px;
   width: 120px;
   height: 100px;
 }
@@ -104,35 +108,38 @@ body {
   /*border-radius: ;*/
   width: 150px;
   height: 50px;
+  padding-bottom: 25px;
 }
 
 .box1-caltech-logo{ /*see HTML file for this reference */
   border-radius: ;
-  width: 160px;
-  height: 40px;
+  width: 148px;
+  height: 37px;
+  padding-bottom: 30px;
+  padding-left: 15px;
 }
 
 .box1-logos ul.box1-logos-ul {
-  padding: 50;
+  padding: 0;
   margin: 0;
 }
 
 .box1-logos li.box1-logos-li {
   display: inline-block;
-  margin: 10px;
+  margin: 0px;
   list-style: none;
 }
 
 .box1-logos li img{
   text-decoration: none;
-  font-size: 40px;
-  transition: all ease-in-out 250ms;
+  /*font-size: 40px;*/
+  transition: all ease-in-out 70ms;
 }
 /* Add a hover effect if you want */
 .box1-nasa-logo:hover, .box1-jpl-logo:hover, .box1-caltech-logo:hover {
   opacity: 0.55;
 }
-/*END of LOGOS*/
+/*END of LOGOS styling*/
 /* Here ENDS the main box */
 
 /*-------------------------*/
