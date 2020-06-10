@@ -6,6 +6,7 @@ body {
   background-attachment: fixed;*/ /*static background*/
   background-color: rgba(255, 255, 255, 0.3); /*blends the color and image*/
   background-blend-mode: lighten;
+
   /*center align background image for smartphones*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -85,9 +86,11 @@ body {
 /* Here STARTS the authorship box */
 
 .authorship-box{
-  width: 200px;
+  width: 450px;
   background: rgba(0, 0, 0, 0.70);
-  padding: 5px;
+  padding: 40px;
+  padding-top: 3px;
+  padding-bottom: 3px;
   text-align: center;
   /*margin: auto;*/
   margin-top: 5%; /* usually 5% */
