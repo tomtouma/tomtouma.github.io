@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background: url("../img/background.JPG") no-repeat center center fixed; /*the apostrophes are needed for github*/
-  background-color: rgba(255, 255, 255, 0.3); /*blends the color and image*/
+  background-color: rgba(255, 255, 255, 0.25); /*blends the color and image*/
   background-blend-mode: lighten; /*this & above line give opaque background look*/
 
   /*center align background image for smartphones*/
@@ -10,9 +10,6 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover; /*usually 'cover'*/
-
-  overflow-y: scroll;
-  -webkit-overflow-scrolling:touch; //mobile safari
 }
 /* Here ENDS the BODY*/
 
@@ -20,8 +17,8 @@ body {
 
 /* Here STARTS the main box */
 .box{
-  width: 450px;
-  background: rgba(0, 0, 0, 0.70);
+  width: 800px; /*originally 450px*/
+  background: rgba(0, 0, 0, 0.75);
   padding: 40px;
   text-align: center;
   /*margin: auto;*/
@@ -32,7 +29,7 @@ body {
   font-family: 'Calibri', Sans-serif;
   border-radius: 0%;
 
-  /*this code allows you to scroll within a set size div box*/
+  /*below code allows you to scroll within a set size div box*/
   /*height: 500px;
   max-height: 500px;
   overflow-y: scroll;
@@ -155,7 +152,7 @@ padding-top: 20px;
 
 /* Here STARTS the authorship box */
 .authorship-box{
-  width: 450px; /*should match other boxes if you want it exactly centered with them*/
+  width: 800px; /*originally 450px*/ /*should match other boxes if you want it exactly centered with them*/
   background: rgba(0, 0, 0, 0.7);
   padding: 40px;
   padding-top: 3px;
