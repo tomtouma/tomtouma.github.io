@@ -78,11 +78,6 @@ body {
   margin-top: -5px;
 }
 
-.box p.personal-paragraph{
-  text-align: justify;
-  font-size: 18px;
-}
-
 .box p.work-blurb-paragraph{
   text-align: justify;
   font-size: 18px;
@@ -90,6 +85,11 @@ body {
 
 .box p.skill-list{
   /*made this paragraph its own class, if I want to change its look later*/
+  text-align: justify;
+  font-size: 18px;
+}
+
+.box p.personal-paragraph{
   text-align: justify;
   font-size: 18px;
 }
