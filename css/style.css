@@ -17,7 +17,6 @@ body {
 
 /* Here STARTS the main box */
 .box{
-  box-sizing: border-box;
   width: 450px;
   background: rgba(0, 0, 0, 0.70);
   padding: 40px;
