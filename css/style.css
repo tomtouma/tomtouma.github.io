@@ -19,7 +19,9 @@ body {
   background: rgba(0, 0, 0, 0.70);
   padding: 40px;
   text-align: center;
-  margin: auto;
+  /*margin: auto;*/
+  margin-left: auto;
+  margin-right: right;
   margin-top: 5%;
   color: white;
   font-family: 'Calibri', Sans-serif;
