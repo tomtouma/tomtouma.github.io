@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: url(/img/background.jpg);
+  background: url(../img/background.JPG);
   background-repeat: no-repeat;
   background-attachment: fixed; /* note: static background --> https://www.w3schools.com/cssref/pr_background-attachment.asp */
   background-size: cover;
