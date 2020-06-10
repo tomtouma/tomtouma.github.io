@@ -73,7 +73,7 @@ body {
   font-weight: 100;
   /*text-align: ;*/
   /*margin-right: -300px;*/
-  margin-top: -5px;
+  margin-top: -15px;
 }
 
 .box p.work-blurb-paragraph{
@@ -184,11 +184,13 @@ padding-top: 20px;
 
 /* Here STARTS the authorship box */
 .authorship-box{
-  width: 800px; /*originally 450px*/ /*should match other boxes if you want it exactly centered with them*/
+  max-width: 800px; /*This gives the ideal width on a big screen*/ /*originally width: 450px*/
+  width: 100%; /*This, in conjunction with the above line resize the box when someone's screen is small*/
+  /*width: 800px;*/
   background: rgba(0, 0, 0, 0.7);
   padding: 40px;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  padding-top: 1px;
+  padding-bottom: 1px;
   text-align: center;
   /*margin: auto;*/
   margin-top: 5%; /* usually 5% */
