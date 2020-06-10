@@ -26,7 +26,8 @@ body {
   color: white;
   font-family: 'Calibri', Sans-serif;
   border-radius: 0%;
-  overflow: scroll;
+  overflow: auto;
+  height: 100%;
 }
 
 .box-img{ /*see HTML file for this reference */
