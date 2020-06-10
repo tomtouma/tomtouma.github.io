@@ -17,7 +17,8 @@ body {
 
 /* Here STARTS the main box */
 .box{
-  width: 800px; /*originally 450px*/
+  max-width: 800px; /*This gives the ideal width on a big screen*/ /*originally 450px*/
+  width: 100%; /*This, in conjunction with the above line resize the box when someone's screen is small*/
   background: rgba(0, 0, 0, 0.75);
   padding: 40px;
   text-align: center;
@@ -27,7 +28,10 @@ body {
   margin-top: 1%;
   color: white;
   font-family: 'Calibri', Sans-serif;
-  border-radius: 0%;
+  border-radius: 0%; /*looks a little odd when rounded*/
+  resize: both;
+  overflow: auto;
+
 
   /*below code allows you to scroll within a set size div box*/
   /*height: 500px;
