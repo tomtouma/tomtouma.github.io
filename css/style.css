@@ -25,7 +25,7 @@ body {
   margin-top: 3%;
   color: white;
   font-family: 'Calibri', Sans-serif;
-  border-radius: 3%;
+  border-radius: 0%;
 }
 
 .box-img{ /*see HTML file for this reference */
@@ -91,7 +91,7 @@ body {
   margin-top: 5%; /* usually 5% */
   color: white;
   font-family: 'Calibri', Sans-serif;
-  border-radius: 2%;
+  border-radius: 0%;
 }
 
 /* Here ENDS the authorship box */
