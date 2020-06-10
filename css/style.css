@@ -12,6 +12,8 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  overflow: auto;
+  height: 100%;
 }
 
 /* Here STARTS the main box */
@@ -28,6 +30,7 @@ body {
   font-family: 'Calibri', Sans-serif;
   border-radius: 0%;
   overflow: scroll;
+  height: 100%;
 }
 
 .box-img{ /*see HTML file for this reference */
