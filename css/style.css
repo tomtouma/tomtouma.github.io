@@ -3,13 +3,16 @@ body {
   padding: 0;
   background: url("../img/background.JPG") no-repeat center center fixed; /*the apostrophes are needed for github*/
   background-color: rgba(255, 255, 255, 0.3); /*blends the color and image*/
-  background-blend-mode: lighten;
+  background-blend-mode: lighten; /*this & above line give opaque background look*/
 
   /*center align background image for smartphones*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: ; /*usually 'cover'*/
+  background-size: cover; /*usually 'cover'*/
+
+  overflow-y: scroll;
+  -webkit-overflow-scrolling:touch; //mobile safari
 }
 /* Here ENDS the BODY*/
 
