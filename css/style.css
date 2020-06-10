@@ -29,9 +29,6 @@ body {
   color: white;
   font-family: 'Calibri', Sans-serif;
   border-radius: 0%; /*looks a little odd when rounded*/
-  resize: both;
-  overflow: auto;
-
 
   /*below code allows you to scroll within a set size div box*/
   /*height: 500px;
@@ -79,12 +76,11 @@ body {
 }
 
 .box p.work-blurb-paragraph{
-  text-align: justify;
+  text-align: ;
   font-size: 18px;
 }
 
 .box p.skill-list{
-  /*made this paragraph its own class, if I want to change its look later*/
   text-align: justify;
   font-size: 18px;
 }
