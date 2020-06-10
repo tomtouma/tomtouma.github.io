@@ -117,6 +117,14 @@ padding-top: 20px;
   padding-left: 15px;
 }
 
+.box1-nasa-arc-logo{
+  border-radius: ;
+  width: 200px;
+  height: 120px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+}
+
 .box1-logos ul.box1-logos-ul {
   padding: 0;
   margin: 0;
@@ -134,7 +142,7 @@ padding-top: 20px;
   transition: all ease-in-out 70ms;
 }
 /* Add a hover effect if you want */
-.box1-nasa-logo:hover, .box1-jpl-logo:hover, .box1-caltech-logo:hover {
+.box1-nasa-logo:hover, .box1-jpl-logo:hover, .box1-caltech-logo:hover, .box1-nasa-arc-logo:hover {
   opacity: 0.55;
 }
 /*END of LOGOS styling*/
