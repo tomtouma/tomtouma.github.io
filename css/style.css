@@ -1,0 +1,91 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* note: static background --> https://www.w3schools.com/cssref/pr_background-attachment.asp */
+  background-size: cover;
+  background-color: rgba(255, 255, 255, 0.3); /*blends the color and image*/
+  background-blend-mode: lighten;
+}
+
+/* Here STARTS the main box */
+.box{
+  width: 450px;
+  background: rgba(0, 0, 0, 0.70);
+  padding: 40px;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+  color: white;
+  font-family: 'Calibri', Sans-serif;
+  border-radius: 3%;
+}
+
+.box-img{ /*see HTML file for this reference */
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+}
+
+.box h1{
+  font-size: 38px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+
+.box h3{
+  font-size: 20px;
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+
+.box p.first-two-paragraphs{
+  text-align: justify;
+}
+
+.box p.skill-list{
+  /*made this paragraph its own class, might change its look later*/
+  text-align: justify;
+}
+
+/* Style all font-awesome icons */
+.box ul {
+  padding: 0;
+  margin: 0;
+}
+
+.box li {
+  display: inline-block;
+  margin: 20px;
+  list-style: none;
+}
+
+.box li a{
+  color: white;
+  text-decoration: none;
+  font-size: 40px;
+  transition: all ease-in-out 250ms;
+}
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.55;
+}
+
+/* Here ENDS the main box */
+
+/* Here STARTS the authorship box */
+
+.authorship-box{
+  width: 200px;
+  background: rgba(0, 0, 0, 0.70);
+  padding: 5px;
+  text-align: center;
+  margin: auto;
+  margin-top: 5%;
+  color: white;
+  font-family: 'Calibri', Sans-serif;
+  border-radius: 2%;
+}
+
+/* Here ENDS the authorship box */
