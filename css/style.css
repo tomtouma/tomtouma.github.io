@@ -65,7 +65,7 @@ body {
 }
 
 .box p.skill-list{
-  /*made this paragraph its own class, might change its look later*/
+  /*made this paragraph its own class, if I want to change its look later*/
   text-align: justify;
 }
 
@@ -91,6 +91,48 @@ body {
 .fa:hover {
   opacity: 0.55;
 }
+/*end of icon styling*/
+
+/* START of LOGOS*/
+.box1-nasa-logo{ /*see HTML file for this reference */
+  /*border-radius: ;*/
+  width: 120px;
+  height: 100px;
+}
+
+.box1-jpl-logo{ /*see HTML file for this reference */
+  /*border-radius: ;*/
+  width: 150px;
+  height: 50px;
+}
+
+.box1-caltech-logo{ /*see HTML file for this reference */
+  border-radius: ;
+  width: 160px;
+  height: 40px;
+}
+
+.box1-logos ul.box1-logos-ul {
+  padding: 50;
+  margin: 0;
+}
+
+.box1-logos li.box1-logos-li {
+  display: inline-block;
+  margin: 10px;
+  list-style: none;
+}
+
+.box1-logos li img{
+  text-decoration: none;
+  font-size: 40px;
+  transition: all ease-in-out 250ms;
+}
+/* Add a hover effect if you want */
+.box1-nasa-logo:hover, .box1-jpl-logo:hover, .box1-caltech-logo:hover {
+  opacity: 0.55;
+}
+/*END of LOGOS*/
 /* Here ENDS the main box */
 
 /*-------------------------*/
