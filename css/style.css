@@ -77,17 +77,17 @@ body {
 }
 
 .box p.work-blurb-paragraph{
-  text-align: center;
+  text-align: left;
   font-size: 18px;
 }
 
 .box p.skill-list{
-  text-align: center;
+  text-align: left;
   font-size: 18px;
 }
 
 .box p.personal-paragraph{
-  text-align: center;
+  text-align: left;
   font-size: 18px;
 }
 
