@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  background: url("../img/background.JPG") no-repeat center center fixed; /*the apostrophes are needed for github*/
-  background-color: rgba(255, 255, 255, 0.25); /*blends the color and image*/
+  background: url("../img/hubble-udf.jpg") no-repeat center center fixed; /*the apostrophes are needed for github*/
+  background-color: rgba(255, 255, 255, 0.3); /*blends the color and image*/
   background-blend-mode: lighten; /*this & above line give opaque background look*/
 
   /*center align background image for smartphones*/
@@ -77,17 +77,17 @@ body {
 }
 
 .box p.work-blurb-paragraph{
-  text-align: left;
+  text-align: justify; /*the server engine likes when this is "left" but is not reflected in github host, first time i've seen this behaviour, very strange*/
   font-size: 18px;
 }
 
 .box p.skill-list{
-  text-align: left;
+  text-align: justify;
   font-size: 18px;
 }
 
 .box p.personal-paragraph{
-  text-align: left;
+  text-align: justify;
   font-size: 18px;
 }
 
