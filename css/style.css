@@ -27,12 +27,10 @@ body {
   position: fixed;
   height: 50px;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
   /*padding-left ;*/ /*including internal padding to push the stuff from left to right
   otherwise you end up with all kinds of issues -- this creates internal buffer for the box*/
   /*margin-left: auto;
-  margin-right: auto;*/
+  margin-right: auto;*/ /*these seem to have a weird effect on the mobile version when drop down is initiated*/
 }
 
 /* Style the links inside the navigation bar */
