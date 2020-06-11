@@ -50,6 +50,15 @@ body {
   /*margin-right: 450px;*/
 }
 
+.box-img-2{ /*see HTML file for this reference */
+  border-radius: 10%;
+  width: 366px;
+  height: 275px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  /*margin-right: 450px;*/
+}
+
 .box h1{
   font-size: 35px;
   letter-spacing: 2px;
