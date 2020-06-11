@@ -207,6 +207,8 @@ user clicks on the icon. This class makes the topnav look good on small screens
   font-weight: 100;
   /*text-align: ;*/
   /*margin-right: -300px;*/
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .box h3.degree-abbrev{
@@ -219,10 +221,10 @@ user clicks on the icon. This class makes the topnav look good on small screens
 }
 
 .box p.work-blurb-paragraph{
-  text-align: justify; /*the server engine likes when this is "left" but is not reflected in github host, first time i've seen this behaviour, very strange*/
+  text-align: left; /*the server engine likes when this is "left" but is not reflected in github host, first time i've seen this behaviour, very strange*/
   font-size: 18px;
-  padding-right: 50px; /* these two lines prevent the screen from eating the text and turning into a horiz scroll*/
-  padding-left: 10px;
+  padding-right: 20px; /* these two lines prevent the screen from eating the text and turning into a horiz scroll*/
+  padding-left: 20px;
 }
 
 .box p.skill-list{
