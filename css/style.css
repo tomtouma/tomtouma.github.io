@@ -184,9 +184,9 @@ padding-top: 20px;
 
 /* Here STARTS the authorship box */
 .authorship-box{
-  max-width: 800px; /*This gives the ideal width on a big screen*/ /*originally width: 450px*/
-  width: 100%; /*This, in conjunction with the above line resize the box when someone's screen is small*/
-  /*width: 800px;*/
+  /*max-width:*/ 800px; /*This gives the ideal width on a big screen*/ /*originally width: 450px*/
+  /*width: 100%;*/ /*This, in conjunction with the above line resize the box when someone's screen is small*/
+  width: 800px;
   background: rgba(0, 0, 0, 0.7);
   padding: 40px;
   padding-top: 1px;
