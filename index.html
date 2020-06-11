@@ -12,6 +12,25 @@
 
 <!--NAV BAR STARTS here-->
 
+<div class="topnav" id="myTopnav">
+  <a href="https://tomtouma.github.io" class="active"><h2>Thomas Touma</h2></a>
+  <a href="#news">VIDEOS</a>
+  <a href="#contact">PUBLICATIONS</a>
+  <a href="#contact">ARTICLES</a>
+  <!--<div class="dropdown">
+    <button class="dropbtn">Dropdown
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </div>-->
+  <a href="#about">CONTACT</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
 <!--NAV BAR ENDS here-->
 
 <!--Here STARTS the box-->
@@ -68,7 +87,7 @@
   </ul>
   </div>
   <p class="personal-paragraph">When I'm not at work, I'm on my farm with
-    my squad (the scary/adorable pups in the background!), riding dirt bikes, tinkering with cars,
+    my squad <a href="https://tomtouma.github.io/img/pups.JPG">(the scary/adorable pups in this link!)</a>, riding dirt bikes, tinkering with cars,
     helping grandma & grandpa, & maintaining hundreds of acres of farm land
     with my family.
   </p>
@@ -99,6 +118,18 @@
 <!--------------------->
 
 <!-- JAVASCRIPT BELOW -->
+
+<script type="text/javascript">
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+var x = document.getElementById("myTopnav");
+if (x.className === "topnav") {
+  x.className += " responsive";
+} else {
+  x.className = "topnav";
+}
+}
+</script>
 
 <!--JAVASCRIPT end-->
 
