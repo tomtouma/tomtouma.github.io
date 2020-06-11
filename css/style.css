@@ -38,7 +38,7 @@ body {
 .topnav a h2{
   margin-top: -10px;
   display: block;
-  /*text-align: ;*/
+  text-align: left;
   text-decoration: none;
 }
 
