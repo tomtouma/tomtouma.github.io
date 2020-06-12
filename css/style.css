@@ -263,6 +263,13 @@ user clicks on the icon. This class makes the topnav look good on small screens
   padding-left: 2%;
 }
 
+.box p.logos-statement{
+  text-align: center;
+  font-size: 18px;
+  padding-right: 8%;
+  padding-left: 2%;
+}
+
 /* Style all font-awesome icons */
 .box ul {
   padding: 0;
