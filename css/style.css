@@ -42,6 +42,18 @@ body {
   font-family: 'Century Gothic', sans-serif;
 }
 
+.dropdown{
+  float: left;
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 16px; /* clockwise don't forget */
+  margin-top: 5px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Century Gothic', sans-serif;
+}
+
 /* Add an active class to highlight the current page */
 .active /*also can have topnav a h1*/ { /*my name - see html*/
   background-color: ; /*#4CAF50*/
@@ -185,8 +197,8 @@ user clicks on the icon. This class makes the topnav look good on small screens
 
 .box-img{ /*see HTML file for this reference */
   border-radius: 50%;
-  width: 300px;
-  height: 300px;
+  width: 265px;
+  height: 265px;
   /*margin-right: 450px;*/
 }
 
