@@ -196,15 +196,16 @@ user clicks on the icon. This class makes the topnav look good on small screens
 }
 
 .box-img{ /*see HTML file for this reference */
-  border-radius: 10px;
-  width: calc(250*1.7)px;
-  height: 250px;
 
+  /*for collage photo though yields odd results on some mobiles... hmm*/
+  /*border-radius: 9px;
+  width: calc(250*1.7)px;
+  height: 250px;*/
 
 /*below three lines are for original spot profile.jpg*/
-  /*border-radius: 50%;
+  border-radius: 50%;
   width: 265px;
-  height: 265px;*/
+  height: 265px;
 }
 
 .box-img-2{ /*see HTML file for this reference */
