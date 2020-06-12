@@ -228,6 +228,8 @@ user clicks on the icon. This class makes the topnav look good on small screens
 .box p.work-blurb-paragraph{
   text-align: justify; /*the server engine likes when this is "left" but is not reflected in github host, first time i've seen this behaviour, very strange*/
   font-size: 18px;
+  padding-right: 8%;
+  padding-left: 0%;
 }
 
 .box p.skill-list{
