@@ -203,7 +203,7 @@ user clicks on the icon. This class makes the topnav look good on small screens
   height: 250px;*/
 
 /*below three lines are for original spot profile.jpg*/
-  border-radius: 50%;
+  border-radius: 100%;
   width: 265px;
   height: 265px;
 }
