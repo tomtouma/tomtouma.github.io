@@ -191,38 +191,6 @@ user clicks on the icon. This class makes the topnav look good on small screens
   width: 0px;
 }*/
 
-.work-blurb-paragraph-div {
-
-}
-
-.box-img{ /*see HTML file for this reference */
-
-  /*for collage photo though yields odd results on some mobiles... hmm*/
-  /*border-radius: 9px;
-  width: calc(250*1.7)px;
-  height: 250px;*/
-
-/*below three lines are for original spot profile.jpg*/
-  border-radius: 100%;
-  width: 265px;
-  height: 265px;
-}
-
-.box-img-2{ /*see HTML file for this reference */
-  border-radius: 10%;
-  width: 366px;
-  height: 275px;
-}
-
-.box h1{
-  font-size: 35px;
-  letter-spacing: 2px;
-  font-weight: 100;
-  /*text-align: ;*/
-  /*margin-right: -300px;
-  margin-top: -200px;*/
-}
-
 .box h3{
   font-size: 22px;
   letter-spacing: 3px;
@@ -242,58 +210,19 @@ user clicks on the icon. This class makes the topnav look good on small screens
   margin-top: -15px;
 }
 
-.box p.work-blurb-paragraph{
-  text-align: justify; /*the server engine likes when this is "left" but is not reflected in github host, first time i've seen this behaviour, very strange*/
-  font-size: 18px;
-  padding-right: 8%;
-  padding-left: 2%;
-}
-
-.box p.skill-list{
+.box ol li{
   text-align: justify;
   font-size: 18px;
   padding-right: 8%;
   padding-left: 2%;
 }
-
-.box p.personal-paragraph{
-  text-align: justify;
-  font-size: 18px;
-  padding-right: 8%;
-  padding-left: 2%;
-}
-
-/* Style all font-awesome icons */
-.box ul {
-  padding: 0;
-  margin: 0;
-  /*margin-top: 70px;*/
-}
-
-.box li {
-  display: inline-block;
-  margin: 20px;
-  list-style: none;
-}
-
-.box li a{
-  color: white;
-  text-decoration: none;
-  font-size: 40px;
-  transition: all ease-in-out 250ms;
-}
-/* Add a hover effect if you want */
-.fa:hover {
-  opacity: 0.55;
-}
-/*end of icon styling*/
 
 /*---------------------*/
 
 /* START of LOGOS styling*/
 .box1-nasa-logo{ /*see HTML file for this reference */
   /*border-radius: ;*/
-padding-top: 20px;
+  padding-top: 20px;
   width: 120px;
   height: 100px;
 }
@@ -365,7 +294,7 @@ padding-top: 20px;
   padding-bottom: 1px;
   text-align: center;
   /*margin: auto;*/
-  margin-top: 5%; /* usually 5% */
+  margin-top: 11.5%; /* usually 5% */
   margin-left: auto;
   margin-right: auto;
   color: white;
