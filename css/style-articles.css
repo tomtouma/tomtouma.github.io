@@ -284,9 +284,10 @@ user clicks on the icon. This class makes the topnav look good on small screens
 
 .column {
   float: left;
-  width: 48%;
+  width: 48%; /*usually 48%*/
   padding: 5px;
-  padding-top: 25px;
+  padding-top: 27px;
+  /*text-align: justify;*/
 }
 
 /* Clearfix (clear floats) */
