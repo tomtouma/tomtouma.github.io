@@ -303,7 +303,7 @@ user clicks on the icon. This class makes the topnav look good on small screens
   }
 }
 
-.bd-logo {
+.bd-logo, .ieee-logo, .ros-logo, .silvus-logo {
   border-radius: 15px;
 }
 
