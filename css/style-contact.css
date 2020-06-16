@@ -223,59 +223,29 @@ user clicks on the icon. This class makes the topnav look good on small screens
 }
 
 /*---------------------*/
-
-/* START of LOGOS styling*/
-.box1-nasa-logo{ /*see HTML file for this reference */
-  /*border-radius: ;*/
-  padding-top: 20px;
-  width: 120px;
-  height: 100px;
-}
-
-.box1-jpl-logo{ /*see HTML file for this reference */
-  /*border-radius: ;*/
-  width: 150px;
-  height: 70px;
-  padding-bottom: 10px;
-}
-
-.box1-caltech-logo{ /*see HTML file for this reference */
-  border-radius: ;
-  width: 148px;
-  height: 37px;
-  padding-bottom: 35px;
-  padding-left: 15px;
-}
-
-.box1-nasa-arc-logo{
-  border-radius: ;
-  width: 200px;
-  height: 120px;
-  padding-bottom: 10px;
-  padding-left: 15px;
-}
-
-.box1-logos ul.box1-logos-ul {
+/* Style all font-awesome icons */
+.box ul {
   padding: 0;
   margin: 0;
+  /*margin-top: 70px;*/
 }
 
-.box1-logos li.box1-logos-li {
+.box li {
   display: inline-block;
-  margin: 0px;
+  margin: 20px;
   list-style: none;
 }
 
-.box1-logos li img{
+.box li a{
+  color: white;
   text-decoration: none;
-  /*font-size: 40px;*/
-  transition: all ease-in-out 70ms;
+  font-size: 40px;
+  transition: all ease-in-out 250ms;
 }
 /* Add a hover effect if you want */
-.box1-nasa-logo:hover, .box1-jpl-logo:hover, .box1-caltech-logo:hover, .box1-nasa-arc-logo:hover {
+.fa:hover {
   opacity: 0.55;
-}
-/*END of LOGOS styling*/
+}/*END of social media*/
 /* Here ENDS the main box */
 
 /*-------------------------*/
