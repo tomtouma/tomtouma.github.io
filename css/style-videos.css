@@ -191,6 +191,9 @@ user clicks on the icon. This class makes the topnav look good on small screens
   width: 0px;
 }*/
 
+
+
+
 .box h3{
   font-size: 22px;
   letter-spacing: 3px;
@@ -277,7 +280,18 @@ user clicks on the icon. This class makes the topnav look good on small screens
 
 /* Here START the VIDEOS*/
 
+.column {
+  float: left;
+  width: 48%;
+  padding: 5px;
+}
 
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 
 /* Here END the VIDEOS*/
 
