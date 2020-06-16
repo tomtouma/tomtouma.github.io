@@ -283,8 +283,8 @@ user clicks on the icon. This class makes the topnav look good on small screens
 /* Here START the ARTICLE IMAGES*/
 
 .column {
-  float: left;
-  width: 48%; /*usually 48%*/
+  float: justify; /*change this to float left & put the width back at 48% to have horizontal rows that adjust based on window size*/
+  width: ; /*usually 48%*/
   padding: 5px;
   padding-top: 27px;
   /*text-align: justify;*/
