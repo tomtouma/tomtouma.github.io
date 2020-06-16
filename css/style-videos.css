@@ -293,7 +293,7 @@ user clicks on the icon. This class makes the topnav look good on small screens
   display: table;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
   .column {
     width: 100%;
   }
