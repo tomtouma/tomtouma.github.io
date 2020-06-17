@@ -191,37 +191,8 @@ user clicks on the icon. This class makes the topnav look good on small screens
   width: 0px;
 }*/
 
-.contact-paragraph-div {
 
-}
 
-.box-img{ /*see HTML file for this reference */
-
-  /*for collage photo though yields odd results on some mobiles... hmm*/
-  /*border-radius: 9px;
-  width: calc(250*1.7)px;
-  height: 250px;*/
-
-/*below three lines are for original spot profile.jpg*/
-  border-radius: 100%;
-  width: 265px;
-  height: 265px;
-}
-
-.box-img-2{ /*see HTML file for this reference */
-  border-radius: 10%;
-  width: 366px;
-  height: 275px;
-}
-
-.box h1{
-  font-size: 35px;
-  letter-spacing: 2px;
-  font-weight: 100;
-  /*text-align: ;*/
-  /*margin-right: -300px;
-  margin-top: -200px;*/
-}
 
 .box h3{
   font-size: 22px;
@@ -233,6 +204,8 @@ user clicks on the icon. This class makes the topnav look good on small screens
   padding-right: 20px;
 }
 
+
+
 .box h3.degree-abbrev{
   font-size: 18px;
   letter-spacing: 3px;
@@ -242,35 +215,14 @@ user clicks on the icon. This class makes the topnav look good on small screens
   margin-top: -15px;
 }
 
-.box p.contact-paragraph{
-  text-align: center; /*the server engine likes when this is "left" but is not reflected in github host, first time i've seen this behaviour, very strange*/
-  font-size: 17px;
-  padding-right: 8%;
-  padding-left: 2%;
-  line-height: 33px;
-}
-
-.box p.skill-list{
+.box ol li{
   text-align: justify;
   font-size: 18px;
   padding-right: 8%;
   padding-left: 2%;
 }
 
-.box p.personal-paragraph{
-  text-align: justify;
-  font-size: 18px;
-  padding-right: 8%;
-  padding-left: 2%;
-}
-
-.box p.logos-statement{
-  text-align: center;
-  font-size: 18px;
-  padding-right: 8%;
-  padding-left: 2%;
-}
-
+/*---------------------*/
 /* Style all font-awesome icons */
 .box ul {
   padding: 0;
@@ -293,72 +245,40 @@ user clicks on the icon. This class makes the topnav look good on small screens
 /* Add a hover effect if you want */
 .fa:hover {
   opacity: 0.55;
-}
-/*end of icon styling*/
-
-/*---------------------*/
-
-/* START of LOGOS styling*/
-.box1-nasa-logo{ /*see HTML file for this reference */
-  /*border-radius: ;*/
-padding-top: 20px;
-  width: 120px;
-  height: 100px;
-}
-
-.box1-jpl-logo{ /*see HTML file for this reference */
-  /*border-radius: ;*/
-  width: 150px;
-  height: 70px;
-  padding-bottom: 10px;
-}
-
-.box1-caltech-logo{ /*see HTML file for this reference */
-  border-radius: ;
-  width: 148px;
-  height: 37px;
-  padding-bottom: 35px;
-  padding-left: 15px;
-}
-
-.box1-nasa-arc-logo{
-  border-radius: ;
-  width: 200px;
-  height: 120px;
-  padding-bottom: 10px;
-  padding-left: 15px;
-}
-
-.box1-logos ul.box1-logos-ul {
-  padding: 0;
-  margin: 0;
-}
-
-.box1-logos li.box1-logos-li {
-  display: inline-block;
-  margin: 0px;
-  list-style: none;
-}
-
-.box1-logos li img{
-  text-decoration: none;
-  /*font-size: 40px;*/
-  transition: all ease-in-out 70ms;
-}
-/* Add a hover effect if you want */
-.box1-nasa-logo:hover, .box1-jpl-logo:hover, .box1-caltech-logo:hover, .box1-nasa-arc-logo:hover {
-  opacity: 0.55;
-}
-/*END of LOGOS styling*/
+}/*END of social media*/
 /* Here ENDS the main box */
 
 /*-------------------------*/
 
-/* Here STARTS the VIDEOS box AKA "box2" */
+/* Here START the ARTICLE IMAGES*/
 
-/*Consider just having buttons to different URL's.. easier*/
+.column {
+  float: justify; /*change this to float left & put the width back at 48% to have horizontal rows that adjust based on window size*/
+  width: ; /*usually 48%*/
+  padding: 5px;
+  padding-top: 30px;
+  /*text-align: justify;*/
+}
 
-/* Here ENDS the VIDEOS box AKA "box2" */
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+    padding-left: 4px;
+  }
+}
+
+.bd-logo, .ieee-logo, .ros-logo, .silvus-logo, .velodyne-logo, .daily-mail-logo {
+  border-radius: 15px;
+}
+
+/* Here END the ARTICLE IMAGES*/
 
 /*-------------------------*/
 
