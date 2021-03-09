@@ -304,8 +304,8 @@ user clicks on the icon. This class makes the topnav look good on small screens
   }
 }
 
-.bd-logo, .ieee-logo, .ros-logo, .silvus-logo, .velodyne-logo, .daily-mail-logo, .space-com-logo {
-  border-radius: 15px;
+.bd-logo, .ieee-logo, .ros-logo, .silvus-logo, .velodyne-logo, .markforged-logo, .daily-mail-logo, .space-com-logo {
+  border-radius: 13px;
 }
 
 /* Here END the ARTICLE IMAGES*/
