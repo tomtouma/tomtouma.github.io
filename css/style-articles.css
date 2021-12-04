@@ -1,0 +1,333 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: url("../img/hubble-udf.jpg") no-repeat center center fixed; /*the apostrophes are needed for github*/
+  background-color: rgba(255, 255, 255, 0.3); /*blends the color and image*/
+  background-blend-mode: lighten; /*this & above line give opaque background look*/
+
+  /*center align background image for smartphones*/
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; /*usually 'cover'*/
+}
+/* Here ENDS the BODY*/
+
+/*---------------------------*/
+/*---------------------------*/
+/*---------------------------*/
+
+/* Here STARTS the NAV BAR*/
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: rgba(0,0,0,0.7);
+  overflow: hidden; /*usually hidden*/
+  position: fixed;
+  top: 0;
+  width: 100%;
+  /*min-width: 100%;*/
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 16px; /* clockwise don't forget */
+  margin-top: 5px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Century Gothic', sans-serif;
+}
+
+.dropdown{
+  float: left;
+  display: inline-block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 12px 16px; /* clockwise don't forget */
+  margin-top: 5px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Century Gothic', sans-serif;
+}
+
+/* Add an active class to highlight the current page */
+.active /*also can have topnav a h1*/ { /*my name - see html*/
+  background-color: ; /*#4CAF50*/
+  color: ;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Dropdown container - needed to position the dropdown content */
+.dropdown {
+  float: left;
+  overflow: hidden;
+
+}
+
+/* Style the dropdown button to fit inside the topnav */
+.dropdown .dropbtn {
+  font-size: 17px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Style the links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a dark background on topnav links and the dropdown button on hover */
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+/* Add a grey background to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Show the dropdown menu when the user moves the mouse over the dropdown button */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home").
+Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the
+user clicks on the icon. This class makes the topnav look good on small screens
+(display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: ;} /*prev: 'relative' was causing errors, thanks for pointing this out Fernando!! <3*/
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: none;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+/* Here ENDS the NAV BAR*/
+
+/*---------------------------*/
+/*---------------------------*/
+/*---------------------------*/
+
+/* Here STARTS the main box */
+.box{
+  max-width: 700px; /*This gives the ideal width on a big screen*/ /*originally width: 450px*/
+  width: 100%; /*This, in conjunction with the above line resize the box when someone's screen is small*/
+  /*width: 800px;*/
+  background: rgba(0, 0, 0, 0.75);
+  padding: 40px;
+  text-align: center;
+  /*margin: auto;*/
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 69px; /*can do percentage too though not faavourable for when screens resize*/
+  color: white;
+  font-family: 'Calibri', Sans-serif;
+  border-radius: 0%; /*looks a little odd when rounded*/
+
+  /*below code allows you to scroll within a set size div box*/
+  /*height: 500px;
+  max-height: 500px;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling:touch; //mobile safari*/
+}
+
+/*this will make the scrollbar width 0 and thus make it disappear*/
+/*::-webkit-scrollbar {
+  width: 0px;
+}*/
+
+
+
+
+.box h3{
+  font-size: 22px;
+  letter-spacing: 3px;
+  font-weight: 100;
+  /*text-align: ;*/
+  /*margin-right: -300px;*/
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+
+.box h3.degree-abbrev{
+  font-size: 18px;
+  letter-spacing: 3px;
+  font-weight: 100;
+  /*text-align: ;*/
+  /*margin-right: -300px;*/
+  margin-top: -15px;
+}
+
+.box ol li{
+  text-align: justify;
+  font-size: 18px;
+  padding-right: 8%;
+  padding-left: 2%;
+}
+
+/*---------------------*/
+
+/* START of LOGOS styling*/
+.box1-nasa-logo{ /*see HTML file for this reference */
+  /*border-radius: ;*/
+  padding-top: 20px;
+  width: 120px;
+  height: 100px;
+}
+
+.box1-jpl-logo{ /*see HTML file for this reference */
+  /*border-radius: ;*/
+  width: 150px;
+  height: 70px;
+  padding-bottom: 10px;
+}
+
+.box1-caltech-logo{ /*see HTML file for this reference */
+  border-radius: ;
+  width: 148px;
+  height: 37px;
+  padding-bottom: 35px;
+  padding-left: 15px;
+}
+
+.box1-nasa-arc-logo{
+  border-radius: ;
+  width: 200px;
+  height: 120px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+}
+
+.box1-logos ul.box1-logos-ul {
+  padding: 0;
+  margin: 0;
+}
+
+.box1-logos li.box1-logos-li {
+  display: inline-block;
+  margin: 0px;
+  list-style: none;
+}
+
+.box1-logos li img{
+  text-decoration: none;
+  /*font-size: 40px;*/
+  transition: all ease-in-out 70ms;
+}
+/* Add a hover effect if you want */
+.box1-nasa-logo:hover, .box1-jpl-logo:hover, .box1-caltech-logo:hover, .box1-nasa-arc-logo:hover {
+  opacity: 0.55;
+}
+/*END of LOGOS styling*/
+/* Here ENDS the main box */
+
+/*-------------------------*/
+
+/* Here START the ARTICLE IMAGES*/
+
+.column {
+  float: justify; /*change this to float left & put the width back at 48% to have horizontal rows that adjust based on window size*/
+  width: ; /*usually 48%*/
+  padding: 5px;
+  padding-top: 30px;
+  /*text-align: justify;*/
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+    padding-left: 4px;
+  }
+}
+
+.bd-logo, .ieee-logo, .ros-logo, .silvus-logo, .velodyne-logo, .eos-logo, .markforged-logo, .daily-mail-logo, .space-com-logo {
+  border-radius: 13px;
+}
+
+/* Here END the ARTICLE IMAGES*/
+
+/*-------------------------*/
+
+/* Here STARTS the authorship box */
+.authorship-box{
+  max-width: 700px; /*This gives the ideal width on a big screen*/ /*originally width: 450px*/
+  width: 100%; /*This, in conjunction with the above line resize the box when someone's screen is small*/
+  /*width: 800px;*/
+  background: rgba(0, 0, 0, 0.7);
+  padding: 40px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  text-align: center;
+  /*margin: auto;*/
+  margin-top: 1%; /* usually 5% */
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  font-family: 'Calibri', Sans-serif;
+  border-radius: 0%;
+}
+/* Here ENDS the authorship box */
