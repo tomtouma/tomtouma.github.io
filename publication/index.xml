@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications | Thomas Touma</title>
+    <link>https://tomtouma.github.io/publication/</link>
+      <atom:link href="https://tomtouma.github.io/publication/index.xml" rel="self" type="application/rss+xml" />
+    <description>Publications</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Dec 2021 03:02:12 +0000</lastBuildDate>
+    <image>
+      <url>https://tomtouma.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Publications</title>
+      <link>https://tomtouma.github.io/publication/</link>
+    </image>
+    
+    <item>
+      <title>Autonomous Mapping and Characterization of Terrestrial Lava Caves Using Quadruped Robots: Preparing for a Mission to a Planetary Cave</title>
+      <link>https://tomtouma.github.io/publication/autonomous-mapping-and-characterization-of-terrestrial-lava-caves-using-quadruped-robots-preparing-for-a-mission-to-a-planetary-cave/</link>
+      <pubDate>Wed, 01 Dec 2021 03:02:12 +0000</pubDate>
+      <guid>https://tomtouma.github.io/publication/autonomous-mapping-and-characterization-of-terrestrial-lava-caves-using-quadruped-robots-preparing-for-a-mission-to-a-planetary-cave/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NeBula: Quest for Robotic Autonomy in Challenging Environments; An Overview of TEAM CoSTAR’s Solution at Phase I and II of DARPA Subterranean Challenge</title>
+      <link>https://tomtouma.github.io/publication/nebula-quest-for-robotic-autonomy-in-challenging-environments-an-overview-of-team-costars-solution-at-phase-i-and-ii-of-darpa-subterranean-challenge/</link>
+      <pubDate>Wed, 01 Dec 2021 02:44:59 +0000</pubDate>
+      <guid>https://tomtouma.github.io/publication/nebula-quest-for-robotic-autonomy-in-challenging-environments-an-overview-of-team-costars-solution-at-phase-i-and-ii-of-darpa-subterranean-challenge/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mars Dogs: Biomimetic Robots for the Exploration of Mars, from its Rugged Surface to its Hidden Caves</title>
+      <link>https://tomtouma.github.io/publication/mars-dogs-biomimetic-robots-for-the-exploration-of-mars-from-its-rugged-surface-to-its-hidden-caves/</link>
+      <pubDate>Wed, 01 Dec 2021 02:00:00 +0000</pubDate>
+      <guid>https://tomtouma.github.io/publication/mars-dogs-biomimetic-robots-for-the-exploration-of-mars-from-its-rugged-surface-to-its-hidden-caves/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deployable Mesh Network for Enabling Reliable Communication from within Subsurface Voids to the Planetary Surface</title>
+      <link>https://tomtouma.github.io/publication/deployable-mesh-network-for-enabling-reliable-communication-from-within-subsurface-voids-to-the-planetary-surface/</link>
+      <pubDate>Wed, 01 Dec 2021 01:44:27 +0000</pubDate>
+      <guid>https://tomtouma.github.io/publication/deployable-mesh-network-for-enabling-reliable-communication-from-within-subsurface-voids-to-the-planetary-surface/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BAXTER: Bi-modal Aerial-Terrestrial Hybrid Vehicle for Long-endurance Versatile Mobility</title>
+      <link>https://tomtouma.github.io/publication/baxter-bi-modal-aerial-terrestrial-hybrid-vehicle-for-long-endurance-versatile-mobility/</link>
+      <pubDate>Wed, 01 Dec 2021 01:17:10 +0000</pubDate>
+      <guid>https://tomtouma.github.io/publication/baxter-bi-modal-aerial-terrestrial-hybrid-vehicle-for-long-endurance-versatile-mobility/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Autonomous Spot: Long-range Autonomous Exploration of Extreme Environments with Legged Locomotion</title>
+      <link>https://tomtouma.github.io/publication/autonomous-spot-long-range-autonomous-exploration-of-extreme-environments-with-legged-locomotion/</link>
+      <pubDate>Wed, 01 Dec 2021 00:12:30 +0000</pubDate>
+      <guid>https://tomtouma.github.io/publication/autonomous-spot-long-range-autonomous-exploration-of-extreme-environments-with-legged-locomotion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Drivocopter: A concept Hybrid Aerial/Ground vehicle for long-endurance mobility</title>
+      <link>https://tomtouma.github.io/publication/drivocopter-a-concept-hybrid-aerial-ground-vehicle-for-long-endurance-mobility/</link>
+      <pubDate>Tue, 30 Nov 2021 23:57:41 +0000</pubDate>
+      <guid>https://tomtouma.github.io/publication/drivocopter-a-concept-hybrid-aerial-ground-vehicle-for-long-endurance-mobility/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NASA OMEGA/UpCycle Systems: M-Powered Farm Project</title>
+      <link>https://tomtouma.github.io/publication/nasa-omega/</link>
+      <pubDate>Wed, 07 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>https://tomtouma.github.io/publication/nasa-omega/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,1306 @@
+<!DOCTYPE html><html lang="en-us" >
+
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  
+  
+    <meta name="generator" content="Wowchemy 5.3.0 for Hugo" />
+  
+
+  
+  
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+  
+  
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  
+
+  
+  
+  
+    
+      
+      <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto+Mono&family=Roboto:wght@400;700&display=swap" media="print" onload="this.media='all'">
+    
+  
+
+  
+  
+  
+  
+  
+    
+    
+    
+  
+  
+
+  <meta name="author" content="Thomas Touma" />
+
+  
+  
+  
+    
+  
+  <meta name="description" content="This paper presents and discusses algorithms, hardware, and software architecture developed
+by the TEAM CoSTAR (Collaborative SubTerranean Autonomous Robots), competing in
+the DARPA Subterranean Challenge. Specifically, it presents the techniques utilized within
+the Tunnel (2019) and Urban (2020) competitions, where CoSTAR achieved 2nd and 1st
+place, respectively. We also discuss CoSTAR’s demonstrations in Martian-analog surface and
+subsurface (lava tubes) exploration. The paper introduces our autonomy solution, referred to
+as NeBula (Networked Belief-aware Perceptual Autonomy). NeBula is an uncertainty-aware
+framework that aims at enabling resilient and modular autonomy solutions by performing
+reasoning and decision making in the belief space (space of probability distributions over
+the robot and world states). We discuss various components of the NeBula framework,
+including: (i) geometric and semantic environment mapping; (ii) a multi-modal positioning
+system; (iii) traversability analysis and local planning; (iv) global motion planning and
+exploration behavior; (v) risk-aware mission planning; (vi) networking and decentralized
+reasoning; and (vii) learning-enabled adaptation. We discuss the performance of NeBula on
+several robot types (e.g. wheeled, legged, flying), in various environments. We discuss the
+specific results and lessons learned from fielding this solution in the challenging courses of
+the DARPA Subterranean Challenge competition." />
+
+  
+  <link rel="alternate" hreflang="en-us" href="https://tomtouma.github.io/publication/nebula-quest-for-robotic-autonomy-in-challenging-environments-an-overview-of-team-costars-solution-at-phase-i-and-ii-of-darpa-subterranean-challenge/" />
+
+  
+  
+  
+    <meta name="theme-color" content="#1565c0" />
+  
+
+  
+  
+
+  
+
+  <link rel="stylesheet" href="/css/vendor-bundle.min.f1ecf783c14edc00c9320c205831ad8e.css" media="print" onload="this.media='all'">
+
+  
+  
+  
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/academicons@1.9.1/css/academicons.min.css" integrity="sha512-W0xM4mr6dEP9nREo7Z9z+9X70wytKvMGeDsj7ps2+xg5QPrEBXC8tAW1IFnzjR6eoJ90JmCnFzerQJTLzIEHjA==" crossorigin="anonymous" media="print" onload="this.media='all'">
+    
+
+    
+    
+    
+    
+      
+      
+    
+    
+    
+
+    
+    
+    
+      
+    
+    
+      
+      
+        
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/github.min.css" crossorigin="anonymous" title="hl-light" media="print" onload="this.media='all'">
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/styles/dracula.min.css" crossorigin="anonymous" title="hl-dark" media="print" onload="this.media='all'" disabled>
+        
+      
+    
+
+    
+    
+    
+
+    
+
+    
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+        
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+      
+      
+
+      
+      
+
+      
+    
+  
+
+  
+  
+  
+  
+  
+  <link rel="stylesheet" href="/css/wowchemy.7fa18a541b489204d14a3f8fd75bb3b5.css" />
+
+  
+
+
+
+  
+
+  
+
+  
+
+
+
+
+  
+  
+  
+
+  
+
+  
+    <link rel="manifest" href="/manifest.webmanifest" />
+  
+
+  <link rel="icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_3.png" />
+  <link rel="apple-touch-icon" type="image/png" href="/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_180x180_fill_lanczos_center_3.png" />
+
+  <link rel="canonical" href="https://tomtouma.github.io/publication/nebula-quest-for-robotic-autonomy-in-challenging-environments-an-overview-of-team-costars-solution-at-phase-i-and-ii-of-darpa-subterranean-challenge/" />
+
+  
+  
+  
+  
+  
+  
+  
+  
+    
+  
+  
+
+  
+  
+    
+    
+  
+  <meta property="twitter:card" content="summary_large_image" />
+  
+  <meta property="og:site_name" content="Thomas Touma" />
+  <meta property="og:url" content="https://tomtouma.github.io/publication/nebula-quest-for-robotic-autonomy-in-challenging-environments-an-overview-of-team-costars-solution-at-phase-i-and-ii-of-darpa-subterranean-challenge/" />
+  <meta property="og:title" content="NeBula: Quest for Robotic Autonomy in Challenging Environments; An Overview of TEAM CoSTAR’s Solution at Phase I and II of DARPA Subterranean Challenge | Thomas Touma" />
+  <meta property="og:description" content="This paper presents and discusses algorithms, hardware, and software architecture developed
+by the TEAM CoSTAR (Collaborative SubTerranean Autonomous Robots), competing in
+the DARPA Subterranean Challenge. Specifically, it presents the techniques utilized within
+the Tunnel (2019) and Urban (2020) competitions, where CoSTAR achieved 2nd and 1st
+place, respectively. We also discuss CoSTAR’s demonstrations in Martian-analog surface and
+subsurface (lava tubes) exploration. The paper introduces our autonomy solution, referred to
+as NeBula (Networked Belief-aware Perceptual Autonomy). NeBula is an uncertainty-aware
+framework that aims at enabling resilient and modular autonomy solutions by performing
+reasoning and decision making in the belief space (space of probability distributions over
+the robot and world states). We discuss various components of the NeBula framework,
+including: (i) geometric and semantic environment mapping; (ii) a multi-modal positioning
+system; (iii) traversability analysis and local planning; (iv) global motion planning and
+exploration behavior; (v) risk-aware mission planning; (vi) networking and decentralized
+reasoning; and (vii) learning-enabled adaptation. We discuss the performance of NeBula on
+several robot types (e.g. wheeled, legged, flying), in various environments. We discuss the
+specific results and lessons learned from fielding this solution in the challenging courses of
+the DARPA Subterranean Challenge competition." /><meta property="og:image" content="https://tomtouma.github.io/publication/nebula-quest-for-robotic-autonomy-in-challenging-environments-an-overview-of-team-costars-solution-at-phase-i-and-ii-of-darpa-subterranean-challenge/featured.jpg" />
+    <meta property="twitter:image" content="https://tomtouma.github.io/publication/nebula-quest-for-robotic-autonomy-in-challenging-environments-an-overview-of-team-costars-solution-at-phase-i-and-ii-of-darpa-subterranean-challenge/featured.jpg" /><meta property="og:locale" content="en-us" />
+  
+    
+      <meta
+        property="article:published_time"
+        content="2021-12-01T02:44:59&#43;00:00"
+      />
+    
+    <meta property="article:modified_time" content="2021-12-01T02:44:59&#43;00:00">
+  
+
+  
+
+
+    
+
+
+
+
+
+
+
+
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://tomtouma.github.io/publication/nebula-quest-for-robotic-autonomy-in-challenging-environments-an-overview-of-team-costars-solution-at-phase-i-and-ii-of-darpa-subterranean-challenge/"
+  },
+  "headline": "NeBula: Quest for Robotic Autonomy in Challenging Environments; An Overview of TEAM CoSTAR’s Solution at Phase I and II of DARPA Subterranean Challenge",
+  
+  "image": [
+    "https://tomtouma.github.io/publication/nebula-quest-for-robotic-autonomy-in-challenging-environments-an-overview-of-team-costars-solution-at-phase-i-and-ii-of-darpa-subterranean-challenge/featured.jpg"
+  ],
+  
+  "datePublished": "2021-12-01T02:44:59Z",
+  "dateModified": "2021-12-01T02:44:59Z",
+  
+  "author": {
+    "@type": "Person",
+    "name": "A. Agha-Mohammadi"
+  },
+  
+  "publisher": {
+    "@type": "Organization",
+    "name": "Thomas Touma",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://tomtouma.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_3.png"
+    }
+  },
+  "description": "This paper presents and discusses algorithms, hardware, and software architecture developed\nby the TEAM CoSTAR (Collaborative SubTerranean Autonomous Robots), competing in\nthe DARPA Subterranean Challenge. Specifically, it presents the techniques utilized within\nthe Tunnel (2019) and Urban (2020) competitions, where CoSTAR achieved 2nd and 1st\nplace, respectively. We also discuss CoSTAR’s demonstrations in Martian-analog surface and\nsubsurface (lava tubes) exploration. The paper introduces our autonomy solution, referred to\nas NeBula (Networked Belief-aware Perceptual Autonomy). NeBula is an uncertainty-aware\nframework that aims at enabling resilient and modular autonomy solutions by performing\nreasoning and decision making in the belief space (space of probability distributions over\nthe robot and world states). We discuss various components of the NeBula framework,\nincluding: (i) geometric and semantic environment mapping; (ii) a multi-modal positioning\nsystem; (iii) traversability analysis and local planning; (iv) global motion planning and\nexploration behavior; (v) risk-aware mission planning; (vi) networking and decentralized\nreasoning; and (vii) learning-enabled adaptation. We discuss the performance of NeBula on\nseveral robot types (e.g. wheeled, legged, flying), in various environments. We discuss the\nspecific results and lessons learned from fielding this solution in the challenging courses of\nthe DARPA Subterranean Challenge competition."
+}
+</script>
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+
+  <title>NeBula: Quest for Robotic Autonomy in Challenging Environments; An Overview of TEAM CoSTAR’s Solution at Phase I and II of DARPA Subterranean Challenge | Thomas Touma</title>
+</head>
+
+
+<body id="top" data-spy="scroll" data-offset="70" data-target="#TableOfContents" class="page-wrapper   " data-wc-page-id="d25a39fcc61cc2d382c1dd7651b7417d" >
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <script src="/js/wowchemy-init.min.2da3b1fa37e894630bf6de39b1b694b3.js"></script>
+
+  
+
+
+<aside class="search-modal" id="search">
+  <div class="container">
+    <section class="search-header">
+
+      <div class="row no-gutters justify-content-between mb-3">
+        <div class="col-6">
+          <h1>Search</h1>
+        </div>
+        <div class="col-6 col-search-close">
+          <a class="js-search" href="#" aria-label="Close"><i class="fas fa-times-circle text-muted" aria-hidden="true"></i></a>
+        </div>
+      </div>
+
+      <div id="search-box">
+        
+        <input name="q" id="search-query" placeholder="Search..." autocapitalize="off"
+        autocomplete="off" autocorrect="off" spellcheck="false" type="search" class="form-control"
+        aria-label="Search...">
+        
+      </div>
+
+      
+      
+
+      
+
+    </section>
+    <section class="section-search-results">
+
+      <div id="search-hits">
+        
+      </div>
+
+    </section>
+  </div>
+</aside>
+
+
+
+  <div class="page-header">
+    
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id="navbar-main">
+  <div class="container-xl">
+
+    
+    <div class="d-none d-lg-inline-flex">
+      <a class="navbar-brand" href="/">Thomas Touma</a>
+    </div>
+    
+
+    
+    <button type="button" class="navbar-toggler" data-toggle="collapse"
+            data-target="#navbar-content" aria-controls="navbar-content" aria-expanded="false" aria-label="Toggle navigation">
+    <span><i class="fas fa-bars"></i></span>
+    </button>
+    
+
+    
+    <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
+      <a class="navbar-brand" href="/">Thomas Touma</a>
+    </div>
+    
+
+    
+    
+    <div class="navbar-collapse main-menu-item collapse justify-content-start" id="navbar-content">
+
+      
+      <ul class="navbar-nav d-md-inline-flex">
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#about"><span>Home</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#projects"><span>Projects</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#publications"><span>Publications</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#accomplishments"><span>News</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#experience"><span>Experience</span></a>
+        </li>
+
+        
+        
+
+        
+
+        
+        
+        
+          
+        
+
+        
+
+        
+        
+        
+        
+
+        
+          
+            
+            
+          
+          
+            
+            
+            
+              
+            
+            
+          
+        
+
+        <li class="nav-item">
+          <a class="nav-link " href="/#contact"><span>Contact</span></a>
+        </li>
+
+        
+        
+
+      
+
+        
+      </ul>
+    </div>
+
+    <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
+
+      
+      
+        
+      
+
+      
+      
+      <li class="nav-item">
+        <a class="nav-link js-search" href="#" aria-label="Search"><i class="fas fa-search" aria-hidden="true"></i></a>
+      </li>
+      
+
+      
+      
+      <li class="nav-item dropdown theme-dropdown">
+        <a href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-label="Display preferences">
+          <i class="fas fa-moon" aria-hidden="true"></i>
+        </a>
+        <div class="dropdown-menu">
+          <a href="#" class="dropdown-item js-set-theme-light">
+            <span>Light</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-dark">
+            <span>Dark</span>
+          </a>
+          <a href="#" class="dropdown-item js-set-theme-auto">
+            <span>Automatic</span>
+          </a>
+        </div>
+      </li>
+      
+
+      
+      
+
+    </ul>
+
+  </div>
+</nav>
+
+
+  </div>
+
+  <div class="page-body">
+    
+
+
+
+
+
+
+
+
+<div class="pub">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+
+<div class="article-container pt-3">
+  <h1>NeBula: Quest for Robotic Autonomy in Challenging Environments; An Overview of TEAM CoSTAR’s Solution at Phase I and II of DARPA Subterranean Challenge</h1>
+
+  
+
+  
+
+
+<div class="article-metadata">
+
+  
+  
+  
+  
+  <div>
+    
+
+  <span >
+      A. Agha-Mohammadi</span>, <span >
+      et al</span>
+  </div>
+  
+  
+
+  
+  <span class="article-date">
+    
+    
+      
+    
+    December 2021
+  </span>
+  
+
+  
+
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+  
+
+</div>
+
+  
+
+
+
+
+<div class="btn-links mb-3">
+  
+  
+
+
+
+
+
+
+
+
+  
+    
+  
+
+
+
+<a class="btn btn-outline-primary btn-page-header" href="https://drive.google.com/file/d/1npG-omasgOgw1n6NrcPj-8GRcnTBGOL-/view?usp=sharing" target="_blank" rel="noopener">
+  PDF
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+<a class="btn btn-outline-primary btn-page-header" href="https://www.youtube.com/watch?v=VitjPLRdY8g&amp;ab_channel=TeamCoSTAR" target="_blank" rel="noopener">
+  Video
+</a>
+
+
+
+
+
+</div>
+
+
+</div>
+
+
+<div class="article-header article-container featured-image-wrapper mt-4 mb-4" style="max-width: 720px; max-height: 543px;">
+  <div style="position: relative">
+    <img src="/publication/nebula-quest-for-robotic-autonomy-in-challenging-environments-an-overview-of-team-costars-solution-at-phase-i-and-ii-of-darpa-subterranean-challenge/featured_hu3ee8aad1a3178110a3e96c6484a9f4fd_133869_720x0_resize_q75_lanczos.jpg" width="720" height="543" alt="" class="featured-image">
+    <span class="article-header-caption">Team CoSTAR following their DARPA Subterranean Challenge (Urban Circuit) victory in February 2020.</span>
+  </div>
+</div>
+
+
+
+  <div class="article-container">
+
+    
+    <h3>Abstract</h3>
+    <p class="pub-abstract">This paper presents and discusses algorithms, hardware, and software architecture developed
+by the TEAM CoSTAR (Collaborative SubTerranean Autonomous Robots), competing in
+the DARPA Subterranean Challenge. Specifically, it presents the techniques utilized within
+the Tunnel (2019) and Urban (2020) competitions, where CoSTAR achieved 2nd and 1st
+place, respectively. We also discuss CoSTAR’s demonstrations in Martian-analog surface and
+subsurface (lava tubes) exploration. The paper introduces our autonomy solution, referred to
+as NeBula (Networked Belief-aware Perceptual Autonomy). NeBula is an uncertainty-aware
+framework that aims at enabling resilient and modular autonomy solutions by performing
+reasoning and decision making in the belief space (space of probability distributions over
+the robot and world states). We discuss various components of the NeBula framework,
+including: (i) geometric and semantic environment mapping; (ii) a multi-modal positioning
+system; (iii) traversability analysis and local planning; (iv) global motion planning and
+exploration behavior; (v) risk-aware mission planning; (vi) networking and decentralized
+reasoning; and (vii) learning-enabled adaptation. We discuss the performance of NeBula on
+several robot types (e.g. wheeled, legged, flying), in various environments. We discuss the
+specific results and lessons learned from fielding this solution in the challenging courses of
+the DARPA Subterranean Challenge competition.</p>
+    
+
+    
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Type</div>
+          <div class="col-12 col-md-9">
+            <a href="/publication/#2">
+              Journal article
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    
+    <div class="row">
+      <div class="col-md-1"></div>
+      <div class="col-md-10">
+        <div class="row">
+          <div class="col-12 col-md-3 pub-row-heading">Publication</div>
+          <div class="col-12 col-md-9">Journal of Field Robotics</div>
+        </div>
+      </div>
+      <div class="col-md-1"></div>
+    </div>
+    <div class="d-md-none space-below"></div>
+    
+
+    <div class="space-below"></div>
+
+    <div class="article-style"></div>
+
+    
+
+
+
+
+
+
+
+
+<div class="share-box">
+  <ul class="share">
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://twitter.com/intent/tweet?url=https://tomtouma.github.io/publication/nebula-quest-for-robotic-autonomy-in-challenging-environments-an-overview-of-team-costars-solution-at-phase-i-and-ii-of-darpa-subterranean-challenge/&amp;text=NeBula:%20Quest%20for%20Robotic%20Autonomy%20in%20Challenging%20Environments;%20An%20Overview%20of%20TEAM%20CoSTAR%e2%80%99s%20Solution%20at%20Phase%20I%20and%20II%20of%20DARPA%20Subterranean%20Challenge" target="_blank" rel="noopener" class="share-btn-twitter" aria-label="twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.facebook.com/sharer.php?u=https://tomtouma.github.io/publication/nebula-quest-for-robotic-autonomy-in-challenging-environments-an-overview-of-team-costars-solution-at-phase-i-and-ii-of-darpa-subterranean-challenge/&amp;t=NeBula:%20Quest%20for%20Robotic%20Autonomy%20in%20Challenging%20Environments;%20An%20Overview%20of%20TEAM%20CoSTAR%e2%80%99s%20Solution%20at%20Phase%20I%20and%20II%20of%20DARPA%20Subterranean%20Challenge" target="_blank" rel="noopener" class="share-btn-facebook" aria-label="facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="mailto:?subject=NeBula:%20Quest%20for%20Robotic%20Autonomy%20in%20Challenging%20Environments;%20An%20Overview%20of%20TEAM%20CoSTAR%e2%80%99s%20Solution%20at%20Phase%20I%20and%20II%20of%20DARPA%20Subterranean%20Challenge&amp;body=https://tomtouma.github.io/publication/nebula-quest-for-robotic-autonomy-in-challenging-environments-an-overview-of-team-costars-solution-at-phase-i-and-ii-of-darpa-subterranean-challenge/" target="_blank" rel="noopener" class="share-btn-email" aria-label="envelope">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://www.linkedin.com/shareArticle?url=https://tomtouma.github.io/publication/nebula-quest-for-robotic-autonomy-in-challenging-environments-an-overview-of-team-costars-solution-at-phase-i-and-ii-of-darpa-subterranean-challenge/&amp;title=NeBula:%20Quest%20for%20Robotic%20Autonomy%20in%20Challenging%20Environments;%20An%20Overview%20of%20TEAM%20CoSTAR%e2%80%99s%20Solution%20at%20Phase%20I%20and%20II%20of%20DARPA%20Subterranean%20Challenge" target="_blank" rel="noopener" class="share-btn-linkedin" aria-label="linkedin-in">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="whatsapp://send?text=NeBula:%20Quest%20for%20Robotic%20Autonomy%20in%20Challenging%20Environments;%20An%20Overview%20of%20TEAM%20CoSTAR%e2%80%99s%20Solution%20at%20Phase%20I%20and%20II%20of%20DARPA%20Subterranean%20Challenge%20https://tomtouma.github.io/publication/nebula-quest-for-robotic-autonomy-in-challenging-environments-an-overview-of-team-costars-solution-at-phase-i-and-ii-of-darpa-subterranean-challenge/" target="_blank" rel="noopener" class="share-btn-whatsapp" aria-label="whatsapp">
+          <i class="fab fa-whatsapp"></i>
+        </a>
+      </li>
+    
+      
+      
+      
+        
+      
+      
+      
+      <li>
+        <a href="https://service.weibo.com/share/share.php?url=https://tomtouma.github.io/publication/nebula-quest-for-robotic-autonomy-in-challenging-environments-an-overview-of-team-costars-solution-at-phase-i-and-ii-of-darpa-subterranean-challenge/&amp;title=NeBula:%20Quest%20for%20Robotic%20Autonomy%20in%20Challenging%20Environments;%20An%20Overview%20of%20TEAM%20CoSTAR%e2%80%99s%20Solution%20at%20Phase%20I%20and%20II%20of%20DARPA%20Subterranean%20Challenge" target="_blank" rel="noopener" class="share-btn-weibo" aria-label="weibo">
+          <i class="fab fa-weibo"></i>
+        </a>
+      </li>
+    
+  </ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+
+
+
+
+  
+    
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  </div>
+</div>
+  </div>
+
+  <div class="page-footer">
+    
+    
+    <div class="container">
+      <footer class="site-footer">
+
+  
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+
+
+
+
+
+  <p class="powered-by">
+    
+    
+    
+      
+      
+      
+      
+      
+      
+      Published with <a href="https://wowchemy.com/?utm_campaign=poweredby" target="_blank" rel="noopener">Wowchemy</a> — the free, <a href="https://github.com/wowchemy/wowchemy-hugo-themes" target="_blank" rel="noopener">open source</a> website builder that empowers creators.
+    
+  </p>
+</footer>
+
+    </div>
+    
+  </div>
+
+  
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Cite</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <pre><code class="tex hljs"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-outline-primary my-1 js-copy-cite" href="#" target="_blank">
+          <i class="fas fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-outline-primary my-1 js-download-cite" href="#" target="_blank">
+          <i class="fas fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+
+    
+    <script src="/js/vendor-bundle.min.b73dfaac3b6499dc997741748a7c3fe2.js"></script>
+
+    
+    
+    
+      
+      
+        <script src="https://cdn.jsdelivr.net/gh/desandro/imagesloaded@v4.1.4/imagesloaded.pkgd.min.js" integrity="sha512-S5PZ9GxJZO16tT9r3WJp/Safn31eu8uWrzglMahDT4dsmgqWonRY9grk3j+3tfuPr9WJNsfooOR7Gi7HL5W2jw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/metafizzy/isotope@v3.0.6/dist/isotope.pkgd.min.js" integrity="sha512-Zq2BOxyhvnRFXu0+WE6ojpZLOU2jdnqbrM1hmVdGzyeCa1DgM3X5Q4A/Is9xA1IkbUeDd7755dNNI/PzSf2Pew==" crossorigin="anonymous"></script>
+      
+
+      
+      
+
+      
+
+      
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/highlight.min.js" integrity="sha512-Ypjm0o7jOxAd4hpdoppSEN0TQOC19UtPAqD+4s5AlXmUvbmmS/YMxYqAqarQYyxTnB6/rqip9qcxlNB/3U9Wdg==" crossorigin="anonymous"></script>
+        
+        
+        <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@10.2.1/build/languages/r.min.js" crossorigin="anonymous"></script>
+        
+      
+
+    
+
+    
+    
+    
+
+    
+    
+
+    
+    
+    
+      
+      <script id="search-hit-fuse-template" type="text/x-template">
+        <div class="search-hit" id="summary-{{key}}">
+          <div class="search-hit-content">
+            <div class="search-hit-name">
+              <a href="{{relpermalink}}">{{title}}</a>
+              <div class="article-metadata search-hit-type">{{type}}</div>
+              <p class="search-hit-description">{{snippet}}</p>
+            </div>
+          </div>
+        </div>
+      </script>
+      
+        <script src="https://cdn.jsdelivr.net/gh/krisk/Fuse@v3.2.1/dist/fuse.min.js" integrity="sha512-o38bmzBGX+hD3JHWUFCDA09btWaqrNmoJ3RXLlrysA7PP01Kgs4UlE4MhelE1v5dJR3+cxlR4qQlotsW7jKsnw==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/julmot/mark.js@8.11.1/dist/jquery.mark.min.js" integrity="sha512-mhbv5DqBMgrWL+32MmsDOt/OAvqr/cHimk6B8y/bx/xS88MVkYGPiVv2ixKVrkywF2qHplNRUvFsAHUdxZ3Krg==" crossorigin="anonymous"></script>
+      
+    
+
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+      
+      
+      
+      
+      
+      
+      
+    
+
+    
+    
+    
+    
+    
+    
+    
+    
+      
+      
+    
+    
+    <script src="/en/js/wowchemy.min.7cd6ec29d281a73c92a2958a1584aadc.js"></script>
+
+    
+
+
+
+
+
+
+</body>
+</html>
