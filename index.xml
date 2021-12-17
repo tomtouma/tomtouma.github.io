@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Thomas Touma</title>
+    <link>https://tomtouma.github.io/</link>
+      <atom:link href="https://tomtouma.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <description>Thomas Touma</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Sat, 01 Jun 2030 13:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://tomtouma.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Thomas Touma</title>
+      <link>https://tomtouma.github.io/</link>
+    </image>
+    
+    <item>
+      <title>Example Talk</title>
+      <link>https://tomtouma.github.io/talk/example-talk/</link>
+      <pubDate>Sat, 01 Jun 2030 13:00:00 +0000</pubDate>
+      <guid>https://tomtouma.github.io/talk/example-talk/</guid>
+      <description>&lt;div class=&#34;alert alert-note&#34;&gt;
+  &lt;div&gt;
+    Click on the &lt;strong&gt;Slides&lt;/strong&gt; button above to view the built-in slides feature.
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;p&gt;Slides can be added in a few ways:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Create&lt;/strong&gt; slides using Wowchemy&amp;rsquo;s &lt;a href=&#34;https://wowchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;&lt;em&gt;Slides&lt;/em&gt;&lt;/a&gt; feature and link using &lt;code&gt;slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Upload&lt;/strong&gt; an existing slide deck to &lt;code&gt;static/&lt;/code&gt; and link using &lt;code&gt;url_slides&lt;/code&gt; parameter in the front matter of the talk file&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Embed&lt;/strong&gt; your slides (e.g. Google Slides) or presentation video on this page using &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;shortcodes&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Further event details, including &lt;a href=&#34;https://wowchemy.com/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;page elements&lt;/a&gt; such as image galleries, can be added to the body of this page.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>DARPA Subterranean Challenge</title>
+      <link>https://tomtouma.github.io/project/darpa-subterranean-challenge/</link>
+      <pubDate>Mon, 06 Dec 2021 05:42:54 +0000</pubDate>
+      <guid>https://tomtouma.github.io/project/darpa-subterranean-challenge/</guid>
+      <description>&lt;p&gt;Team CoSTAR takes on the DARPA Subterranean (SubT) Challenge which aims to develop innovative technologies that would augment operations underground. The SubT Challenge will explore new approaches to rapidly map, navigate, search, and exploit complex underground environments, including human-made tunnel systems, urban underground, and natural cave networks.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Rollocopter &amp; Drivocopter</title>
+      <link>https://tomtouma.github.io/project/rollocopter-drivocopter/</link>
+      <pubDate>Wed, 01 Dec 2021 10:11:02 +0000</pubDate>
+      <guid>https://tomtouma.github.io/project/rollocopter-drivocopter/</guid>
+      <description>&lt;p&gt;Is it a rover or a flyer? It&amp;rsquo;s both. Rollocopter &amp;amp; Drivocopter are hybrid aerial and terrestrial platforms. They use a quadrotor system to fly or roll along on passive and actuated wheels. These designs give the robots greater range than aerial-only quadrotors and eliminate obstacle-avoidance issues associated with ground-only robots. When the hybrid robots encounter an obstacle, they can simply fly over it. To fly, this robot requires a celestial body with an atmosphere and could potentially be used to explore subterranean caves on other worlds.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mars Dogs</title>
+      <link>https://tomtouma.github.io/project/mars-dogs/</link>
+      <pubDate>Wed, 01 Dec 2021 09:59:50 +0000</pubDate>
+      <guid>https://tomtouma.github.io/project/mars-dogs/</guid>
+      <description>&lt;p&gt;The current mobility systems for planetary exploration are wheeled rovers, limited to flat, gently-sloping terrains and agglomerate regolith. These vehicles cannot tolerate instability and operate within a low risk envelope (i.e., low-incline driving to avoid toppling). Here, we present ‘Mars Dogs’ (MD), four-legged, autonomous, robotic dogs, the next evolution of extreme planetary exploration.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>NeBula Autonomy Solution</title>
+      <link>https://tomtouma.github.io/project/nebula-autonomy-solution/</link>
+      <pubDate>Wed, 01 Dec 2021 09:59:29 +0000</pubDate>
+      <guid>https://tomtouma.github.io/project/nebula-autonomy-solution/</guid>
+      <description>&lt;p&gt;To address various technical challenges across multiple domains in autonomous exploration of extreme environments, we develop a unified modular software system, called NeBula (Networked Belief-aware Perceptual Autonomy).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>OMEGA M-Powered Farm </title>
+      <link>https://tomtouma.github.io/project/omega-m-powered-farm/</link>
+      <pubDate>Wed, 01 Dec 2021 09:37:47 +0000</pubDate>
+      <guid>https://tomtouma.github.io/project/omega-m-powered-farm/</guid>
+      <description>&lt;p&gt;The OMEGA Project (Offshore Membrane Enclosures for Growing Algae) led by NASA and the Omega Global Initiative, is an innovative method to grow algae, clean wastewater, capture carbon dioxide and to ultimately produce biofuel without competing with agriculture for water, fertilizer or land. It was later expanded into the &amp;ldquo;OMEGA Farm&amp;rdquo; or &amp;ldquo;M-Powered Farm&amp;rdquo; project which aims to find a nexus between food, energy, water and waste on livestock farms. The purpose being to maximize efficiency and lower costs on farms and to reduce environmental pollution by repurposing animal waste into usable algal resources.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>BRAILLE</title>
+      <link>https://tomtouma.github.io/project/braille/</link>
+      <pubDate>Wed, 01 Dec 2021 09:27:53 +0000</pubDate>
+      <guid>https://tomtouma.github.io/project/braille/</guid>
+      <description>&lt;p&gt;BRAILLE is a research project funded by NASA’s &lt;em&gt;Planetary Science and Technology through Analog Research&lt;/em&gt; (&lt;a href=&#34;https://astrobiology.nasa.gov/research/astrobiology-at-nasa/pstar/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PSTAR&lt;/a&gt;) program. The project’s objectives are to characterize microbial life and its life signatures (biological, mineralogical, and chemical) within volcanic caves, demonstrate sub-surface activities using robots in a Mars Mission scenario, and assess the performance of the robot-mounted scientific instruments in low or no light settings to explore, map, and assist in remote astrobiology science.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Autonomous Mapping and Characterization of Terrestrial Lava Caves Using Quadruped Robots: Preparing for a Mission to a Planetary Cave</title>
+      <link>https://tomtouma.github.io/publication/autonomous-mapping-and-characterization-of-terrestrial-lava-caves-using-quadruped-robots-preparing-for-a-mission-to-a-planetary-cave/</link>
+      <pubDate>Wed, 01 Dec 2021 03:02:12 +0000</pubDate>
+      <guid>https://tomtouma.github.io/publication/autonomous-mapping-and-characterization-of-terrestrial-lava-caves-using-quadruped-robots-preparing-for-a-mission-to-a-planetary-cave/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>NeBula: Quest for Robotic Autonomy in Challenging Environments; An Overview of TEAM CoSTAR’s Solution at Phase I and II of DARPA Subterranean Challenge</title>
+      <link>https://tomtouma.github.io/publication/nebula-quest-for-robotic-autonomy-in-challenging-environments-an-overview-of-team-costars-solution-at-phase-i-and-ii-of-darpa-subterranean-challenge/</link>
+      <pubDate>Wed, 01 Dec 2021 02:44:59 +0000</pubDate>
+      <guid>https://tomtouma.github.io/publication/nebula-quest-for-robotic-autonomy-in-challenging-environments-an-overview-of-team-costars-solution-at-phase-i-and-ii-of-darpa-subterranean-challenge/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mars Dogs: Biomimetic Robots for the Exploration of Mars, from its Rugged Surface to its Hidden Caves</title>
+      <link>https://tomtouma.github.io/publication/mars-dogs-biomimetic-robots-for-the-exploration-of-mars-from-its-rugged-surface-to-its-hidden-caves/</link>
+      <pubDate>Wed, 01 Dec 2021 02:00:00 +0000</pubDate>
+      <guid>https://tomtouma.github.io/publication/mars-dogs-biomimetic-robots-for-the-exploration-of-mars-from-its-rugged-surface-to-its-hidden-caves/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Deployable Mesh Network for Enabling Reliable Communication from within Subsurface Voids to the Planetary Surface</title>
+      <link>https://tomtouma.github.io/publication/deployable-mesh-network-for-enabling-reliable-communication-from-within-subsurface-voids-to-the-planetary-surface/</link>
+      <pubDate>Wed, 01 Dec 2021 01:44:27 +0000</pubDate>
+      <guid>https://tomtouma.github.io/publication/deployable-mesh-network-for-enabling-reliable-communication-from-within-subsurface-voids-to-the-planetary-surface/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BAXTER: Bi-modal Aerial-Terrestrial Hybrid Vehicle for Long-endurance Versatile Mobility</title>
+      <link>https://tomtouma.github.io/publication/baxter-bi-modal-aerial-terrestrial-hybrid-vehicle-for-long-endurance-versatile-mobility/</link>
+      <pubDate>Wed, 01 Dec 2021 01:17:10 +0000</pubDate>
+      <guid>https://tomtouma.github.io/publication/baxter-bi-modal-aerial-terrestrial-hybrid-vehicle-for-long-endurance-versatile-mobility/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Autonomous Spot: Long-range Autonomous Exploration of Extreme Environments with Legged Locomotion</title>
+      <link>https://tomtouma.github.io/publication/autonomous-spot-long-range-autonomous-exploration-of-extreme-environments-with-legged-locomotion/</link>
+      <pubDate>Wed, 01 Dec 2021 00:12:30 +0000</pubDate>
+      <guid>https://tomtouma.github.io/publication/autonomous-spot-long-range-autonomous-exploration-of-extreme-environments-with-legged-locomotion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Drivocopter: A concept Hybrid Aerial/Ground vehicle for long-endurance mobility</title>
+      <link>https://tomtouma.github.io/publication/drivocopter-a-concept-hybrid-aerial-ground-vehicle-for-long-endurance-mobility/</link>
+      <pubDate>Tue, 30 Nov 2021 23:57:41 +0000</pubDate>
+      <guid>https://tomtouma.github.io/publication/drivocopter-a-concept-hybrid-aerial-ground-vehicle-for-long-endurance-mobility/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Slides</title>
+      <link>https://tomtouma.github.io/slides/example/</link>
+      <pubDate>Tue, 05 Feb 2019 00:00:00 +0000</pubDate>
+      <guid>https://tomtouma.github.io/slides/example/</guid>
+      <description>&lt;h1 id=&#34;create-slides-in-markdown-with-wowchemy&#34;&gt;Create slides in Markdown with Wowchemy&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Wowchemy&lt;/a&gt; | &lt;a href=&#34;https://owchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;features&#34;&gt;Features&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Efficiently write slides in Markdown&lt;/li&gt;
+&lt;li&gt;3-in-1: Create, Present, and Publish your slides&lt;/li&gt;
+&lt;li&gt;Supports speaker notes&lt;/li&gt;
+&lt;li&gt;Mobile friendly slides&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;controls&#34;&gt;Controls&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Next: &lt;code&gt;Right Arrow&lt;/code&gt; or &lt;code&gt;Space&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Previous: &lt;code&gt;Left Arrow&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Start: &lt;code&gt;Home&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Finish: &lt;code&gt;End&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Overview: &lt;code&gt;Esc&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Speaker notes: &lt;code&gt;S&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Fullscreen: &lt;code&gt;F&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Zoom: &lt;code&gt;Alt + Click&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/hakimel/reveal.js#pdf-export&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PDF Export&lt;/a&gt;: &lt;code&gt;E&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;code-highlighting&#34;&gt;Code Highlighting&lt;/h2&gt;
+&lt;p&gt;Inline code: &lt;code&gt;variable&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Code block:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-python&#34;&gt;porridge = &amp;quot;blueberry&amp;quot;
+if porridge == &amp;quot;blueberry&amp;quot;:
+    print(&amp;quot;Eating...&amp;quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;math&#34;&gt;Math&lt;/h2&gt;
+&lt;p&gt;In-line math: $x + y = z$&lt;/p&gt;
+&lt;p&gt;Block math:&lt;/p&gt;
+&lt;p&gt;$$
+f\left( x \right) = ;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
+$$&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;fragments&#34;&gt;Fragments&lt;/h2&gt;
+&lt;p&gt;Make content appear incrementally&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;{{% fragment %}} One {{% /fragment %}}
+{{% fragment %}} **Two** {{% /fragment %}}
+{{% fragment %}} Three {{% /fragment %}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Press &lt;code&gt;Space&lt;/code&gt; to play!&lt;/p&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+   One 
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+   **Two** 
+&lt;/span&gt;
+&lt;span class=&#34;fragment &#34; &gt;
+   Three 
+&lt;/span&gt;
+&lt;hr&gt;
+&lt;p&gt;A fragment can accept two optional parameters:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;class&lt;/code&gt;: use a custom style (requires definition in custom CSS)&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;weight&lt;/code&gt;: sets the order in which a fragment appears&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;speaker-notes&#34;&gt;Speaker Notes&lt;/h2&gt;
+&lt;p&gt;Add speaker notes to your presentation&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{% speaker_note %}}
+- Only the speaker can read these notes
+- Press `S` key to view
+{{% /speaker_note %}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Press the &lt;code&gt;S&lt;/code&gt; key to view the speaker notes!&lt;/p&gt;
+&lt;aside class=&#34;notes&#34;&gt;
+  &lt;ul&gt;
+&lt;li&gt;Only the speaker can read these notes&lt;/li&gt;
+&lt;li&gt;Press &lt;code&gt;S&lt;/code&gt; key to view&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/aside&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;themes&#34;&gt;Themes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;black: Black background, white text, blue links (default)&lt;/li&gt;
+&lt;li&gt;white: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;league: Gray background, white text, blue links&lt;/li&gt;
+&lt;li&gt;beige: Beige background, dark text, brown links&lt;/li&gt;
+&lt;li&gt;sky: Blue background, thin dark text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;ul&gt;
+&lt;li&gt;night: Black background, thick white text, orange links&lt;/li&gt;
+&lt;li&gt;serif: Cappuccino background, gray text, brown links&lt;/li&gt;
+&lt;li&gt;simple: White background, black text, blue links&lt;/li&gt;
+&lt;li&gt;solarized: Cream-colored background, dark green text, blue links&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+
+&lt;section data-noprocess data-shortcode-slide
+  
+      
+      data-background-image=&#34;/media/boards.jpg&#34;
+  &gt;
+
+&lt;h2 id=&#34;custom-slide&#34;&gt;Custom Slide&lt;/h2&gt;
+&lt;p&gt;Customize the slide style and background&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-markdown&#34;&gt;{{&amp;lt; slide background-image=&amp;quot;/media/boards.jpg&amp;quot; &amp;gt;}}
+{{&amp;lt; slide background-color=&amp;quot;#0000FF&amp;quot; &amp;gt;}}
+{{&amp;lt; slide class=&amp;quot;my-style&amp;quot; &amp;gt;}}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;custom-css-example&#34;&gt;Custom CSS Example&lt;/h2&gt;
+&lt;p&gt;Let&amp;rsquo;s make headers navy colored.&lt;/p&gt;
+&lt;p&gt;Create &lt;code&gt;assets/css/reveal_custom.css&lt;/code&gt; with:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&#34;language-css&#34;&gt;.reveal section h1,
+.reveal section h2,
+.reveal section h3 {
+  color: navy;
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;hr&gt;
+&lt;h1 id=&#34;questions&#34;&gt;Questions?&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/wowchemy/wowchemy-hugo-modules/discussions&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Ask&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://wowchemy.com/docs/managing-content/#create-slides&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Documentation&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>NASA OMEGA/UpCycle Systems: M-Powered Farm Project</title>
+      <link>https://tomtouma.github.io/publication/nasa-omega/</link>
+      <pubDate>Wed, 07 Mar 2018 00:00:00 +0000</pubDate>
+      <guid>https://tomtouma.github.io/publication/nasa-omega/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://tomtouma.github.io/admin/config.yml</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>https://tomtouma.github.io/admin/config.yml</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

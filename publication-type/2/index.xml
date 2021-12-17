@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2 | Thomas Touma</title>
+    <link>https://tomtouma.github.io/publication-type/2/</link>
+      <atom:link href="https://tomtouma.github.io/publication-type/2/index.xml" rel="self" type="application/rss+xml" />
+    <description>2</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Wed, 01 Dec 2021 02:44:59 +0000</lastBuildDate>
+    <image>
+      <url>https://tomtouma.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>2</title>
+      <link>https://tomtouma.github.io/publication-type/2/</link>
+    </image>
+    
+    <item>
+      <title>NeBula: Quest for Robotic Autonomy in Challenging Environments; An Overview of TEAM CoSTAR’s Solution at Phase I and II of DARPA Subterranean Challenge</title>
+      <link>https://tomtouma.github.io/publication/nebula-quest-for-robotic-autonomy-in-challenging-environments-an-overview-of-team-costars-solution-at-phase-i-and-ii-of-darpa-subterranean-challenge/</link>
+      <pubDate>Wed, 01 Dec 2021 02:44:59 +0000</pubDate>
+      <guid>https://tomtouma.github.io/publication/nebula-quest-for-robotic-autonomy-in-challenging-environments-an-overview-of-team-costars-solution-at-phase-i-and-ii-of-darpa-subterranean-challenge/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>robotics | Thomas Touma</title>
+    <link>https://tomtouma.github.io/tag/robotics/</link>
+      <atom:link href="https://tomtouma.github.io/tag/robotics/index.xml" rel="self" type="application/rss+xml" />
+    <description>robotics</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 06 Dec 2021 05:42:54 +0000</lastBuildDate>
+    <image>
+      <url>https://tomtouma.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>robotics</title>
+      <link>https://tomtouma.github.io/tag/robotics/</link>
+    </image>
+    
+    <item>
+      <title>DARPA Subterranean Challenge</title>
+      <link>https://tomtouma.github.io/project/darpa-subterranean-challenge/</link>
+      <pubDate>Mon, 06 Dec 2021 05:42:54 +0000</pubDate>
+      <guid>https://tomtouma.github.io/project/darpa-subterranean-challenge/</guid>
+      <description>&lt;p&gt;Team CoSTAR takes on the DARPA Subterranean (SubT) Challenge which aims to develop innovative technologies that would augment operations underground. The SubT Challenge will explore new approaches to rapidly map, navigate, search, and exploit complex underground environments, including human-made tunnel systems, urban underground, and natural cave networks.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mars Dogs</title>
+      <link>https://tomtouma.github.io/project/mars-dogs/</link>
+      <pubDate>Wed, 01 Dec 2021 09:59:50 +0000</pubDate>
+      <guid>https://tomtouma.github.io/project/mars-dogs/</guid>
+      <description>&lt;p&gt;The current mobility systems for planetary exploration are wheeled rovers, limited to flat, gently-sloping terrains and agglomerate regolith. These vehicles cannot tolerate instability and operate within a low risk envelope (i.e., low-incline driving to avoid toppling). Here, we present ‘Mars Dogs’ (MD), four-legged, autonomous, robotic dogs, the next evolution of extreme planetary exploration.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>NeBula Autonomy Solution</title>
+      <link>https://tomtouma.github.io/project/nebula-autonomy-solution/</link>
+      <pubDate>Wed, 01 Dec 2021 09:59:29 +0000</pubDate>
+      <guid>https://tomtouma.github.io/project/nebula-autonomy-solution/</guid>
+      <description>&lt;p&gt;To address various technical challenges across multiple domains in autonomous exploration of extreme environments, we develop a unified modular software system, called NeBula (Networked Belief-aware Perceptual Autonomy).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>BRAILLE</title>
+      <link>https://tomtouma.github.io/project/braille/</link>
+      <pubDate>Wed, 01 Dec 2021 09:27:53 +0000</pubDate>
+      <guid>https://tomtouma.github.io/project/braille/</guid>
+      <description>&lt;p&gt;BRAILLE is a research project funded by NASA’s &lt;em&gt;Planetary Science and Technology through Analog Research&lt;/em&gt; (&lt;a href=&#34;https://astrobiology.nasa.gov/research/astrobiology-at-nasa/pstar/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PSTAR&lt;/a&gt;) program. The project’s objectives are to characterize microbial life and its life signatures (biological, mineralogical, and chemical) within volcanic caves, demonstrate sub-surface activities using robots in a Mars Mission scenario, and assess the performance of the robot-mounted scientific instruments in low or no light settings to explore, map, and assist in remote astrobiology science.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

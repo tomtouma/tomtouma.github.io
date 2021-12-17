@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects | Thomas Touma</title>
+    <link>https://tomtouma.github.io/project/</link>
+      <atom:link href="https://tomtouma.github.io/project/index.xml" rel="self" type="application/rss+xml" />
+    <description>Projects</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Mon, 06 Dec 2021 05:42:54 +0000</lastBuildDate>
+    <image>
+      <url>https://tomtouma.github.io/media/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_3.png</url>
+      <title>Projects</title>
+      <link>https://tomtouma.github.io/project/</link>
+    </image>
+    
+    <item>
+      <title>DARPA Subterranean Challenge</title>
+      <link>https://tomtouma.github.io/project/darpa-subterranean-challenge/</link>
+      <pubDate>Mon, 06 Dec 2021 05:42:54 +0000</pubDate>
+      <guid>https://tomtouma.github.io/project/darpa-subterranean-challenge/</guid>
+      <description>&lt;p&gt;Team CoSTAR takes on the DARPA Subterranean (SubT) Challenge which aims to develop innovative technologies that would augment operations underground. The SubT Challenge will explore new approaches to rapidly map, navigate, search, and exploit complex underground environments, including human-made tunnel systems, urban underground, and natural cave networks.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Rollocopter &amp; Drivocopter</title>
+      <link>https://tomtouma.github.io/project/rollocopter-drivocopter/</link>
+      <pubDate>Wed, 01 Dec 2021 10:11:02 +0000</pubDate>
+      <guid>https://tomtouma.github.io/project/rollocopter-drivocopter/</guid>
+      <description>&lt;p&gt;Is it a rover or a flyer? It&amp;rsquo;s both. Rollocopter &amp;amp; Drivocopter are hybrid aerial and terrestrial platforms. They use a quadrotor system to fly or roll along on passive and actuated wheels. These designs give the robots greater range than aerial-only quadrotors and eliminate obstacle-avoidance issues associated with ground-only robots. When the hybrid robots encounter an obstacle, they can simply fly over it. To fly, this robot requires a celestial body with an atmosphere and could potentially be used to explore subterranean caves on other worlds.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Mars Dogs</title>
+      <link>https://tomtouma.github.io/project/mars-dogs/</link>
+      <pubDate>Wed, 01 Dec 2021 09:59:50 +0000</pubDate>
+      <guid>https://tomtouma.github.io/project/mars-dogs/</guid>
+      <description>&lt;p&gt;The current mobility systems for planetary exploration are wheeled rovers, limited to flat, gently-sloping terrains and agglomerate regolith. These vehicles cannot tolerate instability and operate within a low risk envelope (i.e., low-incline driving to avoid toppling). Here, we present ‘Mars Dogs’ (MD), four-legged, autonomous, robotic dogs, the next evolution of extreme planetary exploration.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>NeBula Autonomy Solution</title>
+      <link>https://tomtouma.github.io/project/nebula-autonomy-solution/</link>
+      <pubDate>Wed, 01 Dec 2021 09:59:29 +0000</pubDate>
+      <guid>https://tomtouma.github.io/project/nebula-autonomy-solution/</guid>
+      <description>&lt;p&gt;To address various technical challenges across multiple domains in autonomous exploration of extreme environments, we develop a unified modular software system, called NeBula (Networked Belief-aware Perceptual Autonomy).&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>OMEGA M-Powered Farm </title>
+      <link>https://tomtouma.github.io/project/omega-m-powered-farm/</link>
+      <pubDate>Wed, 01 Dec 2021 09:37:47 +0000</pubDate>
+      <guid>https://tomtouma.github.io/project/omega-m-powered-farm/</guid>
+      <description>&lt;p&gt;The OMEGA Project (Offshore Membrane Enclosures for Growing Algae) led by NASA and the Omega Global Initiative, is an innovative method to grow algae, clean wastewater, capture carbon dioxide and to ultimately produce biofuel without competing with agriculture for water, fertilizer or land. It was later expanded into the &amp;ldquo;OMEGA Farm&amp;rdquo; or &amp;ldquo;M-Powered Farm&amp;rdquo; project which aims to find a nexus between food, energy, water and waste on livestock farms. The purpose being to maximize efficiency and lower costs on farms and to reduce environmental pollution by repurposing animal waste into usable algal resources.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>BRAILLE</title>
+      <link>https://tomtouma.github.io/project/braille/</link>
+      <pubDate>Wed, 01 Dec 2021 09:27:53 +0000</pubDate>
+      <guid>https://tomtouma.github.io/project/braille/</guid>
+      <description>&lt;p&gt;BRAILLE is a research project funded by NASA’s &lt;em&gt;Planetary Science and Technology through Analog Research&lt;/em&gt; (&lt;a href=&#34;https://astrobiology.nasa.gov/research/astrobiology-at-nasa/pstar/&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;PSTAR&lt;/a&gt;) program. The project’s objectives are to characterize microbial life and its life signatures (biological, mineralogical, and chemical) within volcanic caves, demonstrate sub-surface activities using robots in a Mars Mission scenario, and assess the performance of the robot-mounted scientific instruments in low or no light settings to explore, map, and assist in remote astrobiology science.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
